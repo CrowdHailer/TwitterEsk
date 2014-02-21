@@ -6,23 +6,25 @@
 
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+
+  <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li><a>Home</a></li>
-        <li>Connect</li>
-        <li>Discover</li>
-        <li>Me</li>
+        <li><span class="Icon Icon--home"></span>Home</li>
+        <li><span class="Icon Icon--connect"></span>Connect</li>
+        <li><span class="Icon Icon--discover"></span>Discover</li>
+        <li><span class="Icon Icon--me"></span>Me</li>
       </ul>
     </nav>
-    <img src="" alt="twit">
+    <span class="Icon Icon--bird"></span>
     <input type="search" placeholder="Search">
-    <ul>
-      <li>blah</li>
-      <li>blah </li>
-      <li>blah</li>
+    <ul id="messaging">
+      <li><span class="Icon Icon--message"></span></li>
+      <li><span class="Icon Icon--settings"></span></li>
+      <li id="new-tweet"><span class="Icon Icon--tweet"></span></li>
     </ul>
   </header>
   <div>
@@ -47,7 +49,7 @@
       </section>
       <section>
         <header>
-          <ul>
+          <ul id="trends-header">
             <li>Trends</li>
             <li>Change</li>
           </ul>
